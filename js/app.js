@@ -1,7 +1,7 @@
 /*
  * Array that holds the 16 Cards of the Game.
  */
- var gameCards = ["fa-diamond","fa-diamond",
+ let gameCards = ["fa-diamond","fa-diamond",
                  "fa-paper-plane-o","fa-paper-plane-o",
                  "fa-anchor","fa-anchor",
                  "fa-bolt","fa-bolt",
@@ -12,15 +12,15 @@
 /*
 /* Global Variables
 */
-var gameMoves = 0;    // Initialize game moves to 0. Increment to 1 when two open cards are compared for match/no match.
-var openPairCards = 0; //Count the number of matched Pair of Cards; if openPairCards==8, then game is finished.
-var starRating = 5;    //Start the game with 5 Stars then decrement by 1 star. See rateTheStars().
-var timeCounter = 0;   //Initialize time = 0. This will be used for determining the User time (min and sec).
-var gameTimer;         // Time variable used for setInterval and clearInterval functions.
-var openCardList = []; // An Array to hold a maximum of 2 open cards. Used also to limit opening a 3rd card when 2 are already opened.
-var openCardCtr=0;  //Variable used to start the timer when a user open the first card of the game.
-var seconds = 0;  //Variable to count running seconds of the game. Used with timeCounter variable.
-var minutes = 0;  //Variable to count running minutes of the game. Used with timeCounter variable.
+let gameMoves = 0;    // Initialize game moves to 0. Increment to 1 when two open cards are compared for match/no match.
+let openPairCards = 0; //Count the number of matched Pair of Cards; if openPairCards==8, then game is finished.
+let starRating = 5;    //Start the game with 5 Stars then decrement by 1 star. See rateTheStars().
+let timeCounter = 0;   //Initialize time = 0. This will be used for determining the User time (min and sec).
+let gameTimer;         // Time variable used for setInterval and clearInterval functions.
+let openCardList = []; // An Array to hold a maximum of 2 open cards. Used also to limit opening a 3rd card when 2 are already opened.
+let openCardCtr=0;  //Variable used to start the timer when a user open the first card of the game.
+let seconds = 0;  //Variable to count running seconds of the game. Used with timeCounter variable.
+let minutes = 0;  //Variable to count running minutes of the game. Used with timeCounter variable.
 
 /*
 /* Call the functions to initialize, setup, and start the Memory Game.
@@ -33,7 +33,7 @@ playGame();
 /*
 /* The Game Restart button ("fa fa-repeat" class).
 */
-var gameReset = document.getElementsByClassName("restart");
+let gameReset = document.getElementsByClassName("restart");
 gameReset[0].addEventListener("click", function(){
   restartGame();
 });
@@ -63,7 +63,7 @@ function setUpGameCards(){
 * Shuffle function from http://stackoverflow.com/a/2450976
 */
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -91,7 +91,7 @@ function shuffle(array) {
  */
 function initStars(){
   let stars = document.getElementById("stars");
-  for (var i=1; i<6; i++){
+  for (let i=1; i<6; i++){
     let li = document.createElement("li");
     let i = document.createElement("i");
     stars.appendChild(li);
