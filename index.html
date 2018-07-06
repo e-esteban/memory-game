@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="container">
+      <header>
+          <h1>Matching Game</h1>
+      </header>
+      <section class="score-panel">
+      	<ul id="stars" class="stars"></ul>
+      	<span>Moves : <span  class="moves colorText">0</span> </span>
+        <div class="restart">
+      		<i class="fa fa-repeat"></i>
+      	</div>
+        <span>Timer: <span id="timerText" class="colorText">00:00</span></span>
+      </section>
+
+        <ul id="cardDeck" class="deck"></ul>
+    </div>
+
+  <div id="gameModal" class="gModal">
+    <div class="modalDetails">
+      <p class="modalTxt">Congratulations!</p>
+      <p class="modalTxt">Number of Moves : <span class="colorText">0</span></p>
+      <p class="modalTxt">Time : <span class="colorText">00:00</span></p>
+      <p class="modalTxt">Stars : <span class="colorText">5</span></p>
+      <button id="rBtn">Restart Game</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
