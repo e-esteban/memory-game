@@ -10,6 +10,10 @@ This game is a test of memory. The challenge on this game is to match all the ca
   - Star Rating is based on the number of moves. The more moves a user makes, the less the stars.
   - The game ends when all the cards are matched.
 
+# Game Dependencies
+
+This project uses the [Bootstrap CDN Font Awesome](https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css) and [Google Fonts](https://fonts.googleapis.com/css?family=Coda).
+
 # Credits
 
 Video tutorials from [Mike Wales](https://www.youtube.com/watch?v=_rUH-sEs68Y) for development ideas and [Traversy Media](https://www.youtube.com/watch?v=6ophW7Ask_0) for creating the modal portion were a great help on this project. The shuffle function used in this project came from [Stackoverflow](http://stackoverflow.com/a/2450976). [CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a very good source of information for understanding about flexbox. [w3schools.com](https://www.w3schools.com/css/css3_3dtransforms.asp) was a great reference for the animations of the card deck.
