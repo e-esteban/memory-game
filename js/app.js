@@ -1,7 +1,7 @@
 /*
  * Array that holds the 16 Cards of the Game.
  */
- let gameCards = ["fa-diamond","fa-diamond",
+ const gameCards = ["fa-diamond","fa-diamond",
                  "fa-paper-plane-o","fa-paper-plane-o",
                  "fa-anchor","fa-anchor",
                  "fa-bolt","fa-bolt",
